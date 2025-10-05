@@ -1,0 +1,102 @@
+
+body{
+    background-image: url(/projects/project3/Oxford_Blue.png); 
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
+    position: relative;
+
+}
+
+header {
+    margin-top: -100pt;
+
+}
+
+header img {
+    position: relative;
+    margin-left: 20pt;
+    top: 130px;
+    z-index: 2;
+    height: 100pt;
+    width: auto;
+
+}
+
+header nav {
+    text-align: right;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: rgb(0, 0, 0);
+    padding: 25px 40px;
+    
+}
+
+.navigation {
+    margin: 30pt;
+    font-size: 15pt;
+    margin-right: -10pt;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    padding: 5px 10px;
+
+} 
+
+.navigation:hover {
+    background-color: gray;
+    border-radius: 20pt;
+
+}
+
+.navigation.active{
+    background-color: rgb(110, 115, 255);
+    color: black;
+    border-radius: 20pt;
+    padding: 10pt;
+
+}
+
+.title {
+    font-size: 150pt;
+    font-weight:bolder ;
+    top:-530pt;
+    z-index: 2; 
+    position: relative;
+    text-align: center;
+    margin-bottom: -250pt;
+
+}
+
+.title2 {
+    font-size: 30pt;
+    text-align: right;
+    margin-left:  400pt;
+    top: -570pt;
+    position: relative;
+    text-align: justify;
+    color: white;
+
+}
+
+.introduction {
+    font-size: 20pt;
+    text-align: right;
+    margin-left:  400pt;
+    top: -570pt;
+    position: relative;
+    text-align: justify;
+    color: white;
+
+}
+
+.places {
+    text-align: center;
+    font-size: 30pt;
+    color: white;
+
+}
+
+.images {
+    display: block;
+    margin: 0 auto;
+    margin-top: 10px;
+
+}
