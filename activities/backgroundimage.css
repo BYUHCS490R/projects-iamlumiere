@@ -1,0 +1,25 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url(white-background.jpg);
+    background-repeat: repeat;
+    background-color: rgb(255, 255, 255);
+    color: darkcyan;
+}
+
+/*.other {
+    background-image: url(white-background.jpg) no-repeat rgb(127, 126, 126);
+
+}*/
+
+ header {
+    background: url(fire2.png) repeat top;
+    /*
+    background-image: url(fire.png) ;
+    background-repeat: repeat;*/
+} 
+
+
+.mylist {
+    /*list-style-type: square;*/
+    list-style-image: url(/projects/project3/cp1.ico);
+}
