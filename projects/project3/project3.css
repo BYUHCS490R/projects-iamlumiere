@@ -1,14 +1,12 @@
 
 body{
+    background-image: url(/projects/project3/Oxford_Blue.png) ;
+    background-repeat: repeat;
     font-family: Arial, Helvetica, sans-serif;
     text-align: justify;
     position: relative;
 }
 
-main{
-    background-image: url(/projects/project3/Oxford_Blue.png) ;
-    background-repeat: repeat;
-}
 
 header img {
     position: relative;
