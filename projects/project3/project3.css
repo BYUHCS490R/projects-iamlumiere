@@ -1,6 +1,6 @@
 
 body {
-    background-image: url(/projects/project3/blue-material-background.jpg) ;
+    background-image: url(Oxford_Blue.png) ;
     background-repeat: repeat;
     font-family: Arial, Helvetica, sans-serif;
     text-align: justify;
@@ -8,7 +8,7 @@ body {
 }
 
 main {
-    background-image: url(blue-material-background.jpg) repeat;
+    background-image: url(Oxford_Blue.png) repeat;
 }
 
 header img {
