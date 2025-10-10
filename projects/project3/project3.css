@@ -1,10 +1,11 @@
 
 body {
-    background-image: url(Oxford_Blue.png) ;
-    background-repeat: repeat;
+
     font-family: Arial, Helvetica, sans-serif;
     text-align: justify;
-    position: relative;
+    background-image: url(Oxford_Blue.png) ;
+    background-repeat: repeat;
+
 }
 
 header img {
