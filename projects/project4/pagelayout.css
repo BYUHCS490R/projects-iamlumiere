@@ -1,0 +1,107 @@
+header {
+    background-color: rgb(252, 218, 176);
+    padding: 5px;
+    border: thin solid;
+
+}
+
+.startrek {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 80px;
+    margin-bottom: -20pt;
+    text-align: center;
+    color: rgb(148, 19, 19);
+    font-weight: bolder;
+ 
+
+}
+
+.discovery {
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 45px;
+    margin-top: -10pt;
+    text-align: center;
+    color: rgb(25, 25, 25);
+
+}
+
+header nav {
+    background-color: rgb(161, 38, 38);
+    text-decoration: none;
+    font-size: 30px;
+    text-align: center;
+    padding: 15px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    border: thin solid;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    padding: 7px 20px 7px 20px;
+    margin: 50px;
+    font-weight: bolder;
+
+}
+
+a:hover {
+    background-color: rgb(140, 138, 138);
+    text-shadow: 3px 0px 4px rgb(54, 54, 54);
+    border-radius: 20pt;
+
+}
+
+a:active {
+    background-color: black;
+    border-radius: 20pt;
+    color: white;
+    padding: 10pt;
+}
+
+
+
+
+
+body {
+    background-color:beige;
+    text-align: justify;
+    font-size: 15pt;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+main {
+    line-height: 1.5;
+}
+
+.poster {
+    height: 50%;
+    width: 30.7%;
+    box-shadow: 10px 10px 10px black;
+    margin: 5px;
+    padding: 3px; 
+    border: thin solid;
+}
+
+.description {
+    width: 63%;
+    height: 50%;
+    position: absolute;
+    right: 0;
+    top: 290px;
+    
+}
+
+figcaption {
+    text-align: center;
+}
+
+footer {
+    background-color: rgb(252, 218, 176);
+    text-align: center ;
+    font-size: 25px;
+    padding: 20px;
+    text-transform: uppercase;
+    border: thin solid;
+}
+
