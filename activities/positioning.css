@@ -1,0 +1,42 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.meme1 {
+    border: thin solid black;
+    width: 300px;
+    float: left;
+}
+
+nav a {
+    display: block; /* this is used to make the navigation link from horizontal to vertical*/
+    padding: 10px;
+    background-color: blue;
+    border-bottom: thin solid white;
+    color: black;
+    text-decoration: none;
+
+    /*display: inline-block ; This makes the  navigation links into vertical*/
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+/*.meme2 {
+    position: relative;
+    top: 20px;
+}*/
+
+.meme2 {
+    display: none;
+}
+
+.meme1 img {
+    width: 100%;
+}
+
+.clear {
+    clear: both;
+}
+
