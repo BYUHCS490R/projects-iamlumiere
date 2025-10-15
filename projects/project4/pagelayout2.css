@@ -34,7 +34,7 @@ header nav {
     border: thin solid;
 }
 
-nav a {
+.navigation {
     text-decoration: none;
     color: black;
     padding: 7px 20px 7px 20px;
@@ -43,25 +43,23 @@ nav a {
 
 }
 
-a:hover {
+.navigation:hover {
     background-color: rgb(140, 138, 138);
     text-shadow: 3px 0px 4px rgb(54, 54, 54);
     border-radius: 20pt;
 
 }
 
-a:active {
+.navigation:active {
     background-color: black;
     border-radius: 20pt;
     color: white;
     padding: 10pt;
 }
 
-
-
-
-
 body {
+    background-image: url(lightbackground.jpg);
+    background-repeat: repeat;
     background-color:beige;
     text-align: justify;
     font-size: 15pt;
@@ -70,29 +68,42 @@ body {
 }
 
 main {
-    line-height: 1.5;
+    line-height: 2;
 }
 
-.poster {
+/*.poster {
     height: 50%;
     width: 30.7%;
     box-shadow: 10px 10px 10px black;
     margin: 5px;
     padding: 3px; 
     border: thin solid;
+    float: left;
+}
+*/
+.description {
+    padding-top: 5px;
+
+    
 }
 
-.description {
-    width: 63%;
-    height: 50%;
-    position: absolute;
-    right: 0;
-    top: 290px;
-    
+.poster {
+    display: block;
+    border: thick solid black;
+    width: 30.6%;
+    float: left;
+    height: 1%;
+}
+
+.clear {
+    clear: both;
 }
 
 figcaption {
     text-align: center;
+    background-color: brown;
+    margin-top: -9px;
+    font-size: 30px;
 }
 
 footer {
