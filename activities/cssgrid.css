@@ -1,0 +1,39 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.parent {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ; /* You use this to give your siblings 3 equal spaces for each tags. What happens here is you add the total amount of fr then divides it based on how much is the total. if you do 1fr 4fr 1fr, this will divide the width into 6 equal sections but the one in the middle will get 4 sections while the other gets 1. We can also use percentages but we have to make sure that it will add up to 100%*/
+
+    gap: 10px; /*If you want the parents to push the siblings away from each other.*/
+}
+
+.child {
+    background-color: aqua;
+    /*margin: 10px; if you want to push your siblings away from each other.*/
+}
+
+#wrapper {
+    display: grid;
+    grid-template-areas: 
+        "header header header"
+        "lside main rside"
+        "footer footer footer";
+}
+
+header {
+    grid-area: header;
+}
+
+footer {
+    grid-area: footer;
+}
+
+main {
+    grid-area: main;
+}
+
+nav {
+    grid-area: lside;
+}
