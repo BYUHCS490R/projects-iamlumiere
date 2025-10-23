@@ -1,0 +1,81 @@
+body {
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    background-color: rgb(30, 32, 91);
+    margin:0;
+}
+
+header {
+    background-color:darkcyan;
+    padding: 20px;
+}
+
+header h1{
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+
+}
+
+nav {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    background-color: gray;
+    padding: 10px;
+    margin: 0px;  
+}
+
+nav a {
+    display: block;
+    padding: 7px 20px;
+    background-color:rgb(177, 180, 10);
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    border-radius: 10px;
+    margin: 0px;
+}
+
+nav a:hover {
+    background-color: rgb(119, 121, 5);
+    
+}
+
+main {
+    display: flex;
+}
+
+#parent {
+    display: flex;
+    flex-wrap:wrap;
+    align-items: flex-start;
+}
+
+.products {
+    border: thin solid black;
+    padding: 8px;
+    text-align: center;
+    background-color: whitesmoke;
+    flex-direction: row-reverse;
+    align-items: flex-start;
+    margin: 5px;
+    justify-content: flex-start;
+    
+}
+
+#description {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    width: 20%;
+    justify-content: flex-start;
+    align-content:center;
+    
+
+}
+
+footer {
+    background-color: darkcyan;
+    padding: 10px;
+    margin: 0px;
+}
