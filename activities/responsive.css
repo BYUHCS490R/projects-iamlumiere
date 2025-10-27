@@ -21,6 +21,7 @@ main h2 {
 
 nav {
     display:flex ;
+    flex-direction: row;
     justify-content: space-evenly;
     background-color: darkblue;
     padding: 10px;
@@ -28,7 +29,7 @@ nav {
 
 nav a {
     display: block;
-    padding: 10px 20px;
+    padding: 10px;
     text-decoration: none;
     background-color: blueviolet;
     color: black;
@@ -74,4 +75,28 @@ nav a:hover {
 .row {
     display: flex;
     flex-flow: row wrap;
+}
+
+@media ONLY screen AND (max-width:600px) {
+
+}
+
+
+
+@media ONLY screen AND (max-width: 550px) {
+    nav {
+        flex-direction: column;
+    }
+
+    .main-row {
+        flex-direction: column-reverse; /* used to put the side bar below the cards*/
+    }
+
+    .sidebar {
+        width: 100%; /*used to make the sidebar to use all the spaces for it.*/
+    }
+
+    .main-card {
+        order: -1;
+    }
 }
