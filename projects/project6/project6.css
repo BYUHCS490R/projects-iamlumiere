@@ -1,0 +1,214 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    background-color: rgb(5, 5, 76);
+    color: rgb(250, 247, 242);
+}
+
+header {
+    background-color: rgb(4, 4, 106);
+    padding: 10px;
+    color: rgb(251, 243, 230);
+}
+
+header h1 {
+    font-size: 45px;
+    margin-left: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+
+nav {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: orange;
+    padding: 15px;
+    margin: 0;
+}
+
+nav a{
+    text-decoration: none;
+    font-size: 25px;
+    color: black;
+    padding: 20px;
+}
+
+nav a:hover {
+    background-color: rgb(65, 64, 64);
+    color: rgb(212, 212, 212);
+    border-radius: 40px;
+}
+
+.maincontainer {
+    display: flex;
+    width: 100%;
+}
+
+.main-row {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.describefamily {
+    margin-bottom: 0;
+    width: 100%;
+    font-size: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+}
+
+.rightside {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+
+}
+
+.cards {
+    border: thick solid black;
+    width: 300px;
+    margin: 30px 20px;
+    background-color: rgb(108, 96, 96);
+}
+
+.cards h3 {
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+
+.cards p {
+    text-align: justify;
+    padding: 10px;
+}
+
+.leftside {
+    background-color: black;
+    margin: 0;
+    text-align: center;
+    width: 30%;
+}
+
+.leftside ul {
+    text-align: justify;
+    padding: 30px;
+}
+
+.sidebar {
+    width: auto;
+    background-color: rgb(173, 22, 22);
+}
+
+.sidebar img {
+    width: 100%;
+    justify-content: center;
+}
+
+.sidebar figcaption {
+    text-align: center;
+    font-size: 20px;
+}
+
+footer {
+    background-color: orange;
+    padding: 20px;
+    text-align: center;
+    font-size: 20px;
+}
+
+/*.sidebar {
+    display: flex;
+}
+
+.sidebar img {
+    width: 30%;
+}
+
+.main-row {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.leftside {
+    background-color: black;
+    display: flex;
+}
+
+.rightside {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.rightside p{
+    text-align: justify;
+    padding: 10px;
+}
+
+.maincontainer {
+    display: flex;
+}
+
+.cards {
+    border: thin solid black;
+    width: 300px;
+    margin-top: 30px;
+}
+
+.cards h3 {
+    text-align: center;
+}
+.cards img {
+    width: 100%;
+}*/
+
+
+@media ONLY print {
+    nav {
+        display: none;
+    }
+    
+}
+@media ONLY screen and (max-width:1200px) {
+    .leftside {
+        width: 80%;
+    }
+
+    .rightside {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-evenly;
+    }
+
+
+    .cards {
+        border: thick solid black;
+        width: 300px;
+        margin: 10px 8px 10px 8px;
+        background-color: rgb(108, 96, 96);
+    }
+}
+
+
+@media ONLY screen and (max-width: 600px) {
+    nav {
+        flex-direction: column;
+    }
+
+    .maincontainer {
+        flex-direction: column-reverse; /* used to put the side bar below the cards*/
+    }
+
+    .leftside {
+        margin: 0;
+        width: 100%;
+
+    }
+    .rightside {
+        width: 100%;
+        justify-content: center;
+    }
+
+    
+
+}
+

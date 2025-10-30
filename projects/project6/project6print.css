@@ -1,0 +1,172 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    background-color: rgb(5, 5, 76);
+    color: rgb(250, 247, 242);
+}
+
+header {
+    background-color: rgb(4, 4, 106);
+    padding: 10px;
+    color: rgb(251, 243, 230);
+}
+
+header h1 {
+    font-size: 45px;
+    margin-left: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+
+nav {
+    display: none;
+}
+
+nav a{
+    text-decoration: none;
+    font-size: 25px;
+    color: black;
+    padding: 20px;
+}
+
+nav a:hover {
+    background-color: rgb(65, 64, 64);
+    color: rgb(212, 212, 212);
+    border-radius: 40px;
+}
+
+.maincontainer {
+    display: flex;
+}
+
+.main-row {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.describefamily {
+    margin-bottom: 0;
+    background-color: black;
+    width: 100%;
+    font-size: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.rightside {
+    display: flex;
+    flex-flow: row wrap;
+    
+}
+
+.cards {
+    border: thick solid black;
+    width: 300px;
+    margin-left: 30px;
+    margin-top: 15px;   
+    margin-bottom: 15px;
+    background-color: rgb(108, 96, 96);
+}
+
+.cards h3 {
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+
+.cards p {
+    text-align: justify;
+    padding: 10px;
+}
+
+.sidebar {
+    background-color: black;
+    margin: 0;
+    padding: 20px;
+
+}
+
+.sidebar h3{
+    text-align: center;
+    font-size: 25px;
+}
+
+.sidebar figcaption {
+    text-align: center;
+    font-size: 20px;
+}
+
+footer {
+    background-color: orange;
+    padding: 20px;
+    text-align: center;
+    font-size: 20px;
+}
+
+/*.sidebar {
+    display: flex;
+}
+
+.sidebar img {
+    width: 30%;
+}
+
+.main-row {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.leftside {
+    background-color: black;
+    display: flex;
+}
+
+.rightside {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.rightside p{
+    text-align: justify;
+    padding: 10px;
+}
+
+.maincontainer {
+    display: flex;
+}
+
+.cards {
+    border: thin solid black;
+    width: 300px;
+    margin-top: 30px;
+}
+
+.cards h3 {
+    text-align: center;
+}
+.cards img {
+    width: 100%;
+}*/
+
+@media ONLY screen and (max-width:800px) {
+
+}
+
+@media ONLY screen and (max-width: 600px) {
+    nav {
+        flex-direction: column;
+    }
+
+    .maincontainer {
+        flex-direction: column-reverse; /* used to put the side bar below the cards*/
+    }
+
+    .leftside {
+        width: 100%; /*used to make the sidebar to use all the spaces for it.*/
+    }
+
+    .main-card {
+        order: -1;
+    }
+
+}
+

@@ -82,7 +82,6 @@ nav a:hover {
 }
 
 
-
 @media ONLY screen AND (max-width: 550px) {
     nav {
         flex-direction: column;
