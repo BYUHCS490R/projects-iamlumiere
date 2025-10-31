@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tables</title>
+    <link rel="stylesheet" href="tables.css">
+</head>
+<body>
+    <header><h1>Markham Abor's Web Design.</h1></header>
+    <main>
+        <h1>Questions:</h1> 
+        <h3>1. When do you use a table?</h3>
+        <p> You have to be careful in using tables as this affect your website. We ust it when we have data to display. Like a sports team with their data about losses, wins, or overall their stats to hekp organize the data. </p>
+
+        <h3>2. When do you not use a table?</h3>
+        <p> Tables was used before to layout. Now we do not use it because there's a modern way to code.</p>
+
+        <h3>3. When do you need to do extra work for table accessibility? </h3>
+        <p> Accessibility mean that people with disability can use it. Blind people use screen reader to help them we need to put label. We add th to title headings to help in Accessibility. You can also use access checker. Accessibility can only label what's written on the top. Check the total credits and the number 12. We do this to connect the 12 to the total credits.</p>
+
+        <p> You caption tag can be put anywhere in html inside the table. Remember to only use the table f or data. </p>
+    </main>
+
+    <div>
+        <h1>tables</h1>
+        <table border="5">  
+            <!-- This is one is showing red because it is not supposed to be used anymore, we should be using CSS instead of table. -->
+             <caption> My Class Schedule</caption>
+             <thead>
+                <tr>
+                    <th colspan="6">Fall 2025</th>
+                </tr>
+                
+                <tr>
+                    <th> Department</th>
+                    <th>Number</th>
+                    <th>Title</th>
+                    <th>Time</th>
+                    <th>Location</th>
+                    <th>Credits</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>ACCT</td>
+                    <td>186</td>
+                    <td>Intro to Financial Computing</td>
+                    <td>8AM - 9AM MWF</td>
+                    <td>HGB 125</td>
+                    <td>3</td>
+                </tr>
+
+                <tr>
+                    <td rowspan="3">CS</td>
+                    <td rowspan="3">140</td>
+                    <td>Web Design</td>
+                    <td>11AM 12AM MWF</td>
+                    <td>Portable 3</td>
+                    <td>3</td>
+                    
+                </tr>
+
+                <tr>
+
+                    <td>Web Design</td>
+                    <td>11AM 12AM MWF</td>
+                    <td>Portable 3</td>
+                    <td>3</td>
+                    
+                </tr>
+
+                <tr>
+                    <td>Web Design</td>
+                    <td>11AM 12AM MWF</td>
+                    <td>Portable 3</td>
+                    <td>3</td>
+                </tr>
+
+            <tfoot>
+                <tr>
+                    <th colspan="5" id="totalcredits">Total Credits</td>
+                    <td headers="totalcredits">12</td>
+                </tr>
+            </tfoot>
+        
+            </tbody>
+        </table>
+    </div>
+
+    <footer>
+        &copy; 2025 Markham Abor
+    </footer>
+
+</body>
+</html>
