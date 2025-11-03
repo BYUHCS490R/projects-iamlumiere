@@ -1,3 +1,60 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
 }
+
+.schedule {
+   
+   border-spacing: 0;
+   border-collapse: collapse;
+   text-align: center;
+
+
+
+
+    /* border: 20px outset black;
+    padding: 10px;
+    border-spacing: 3px;
+    margin: 5px;
+    caption-side: top;
+    width: 80%;
+    margin: auto;
+    overflow: scroll;
+    background-color: chartreuse;*/
+}
+/* You can add padding on the outside to adjust the weight of the border. If you want a gap between the boxes or cells you can use border-spacing. We cannot add on the cells but we can add margin on the table to put spacing for the table. You dont put any unit after 0 because zero means its nothing. There's another property called border collapse that's used to overlaps the border that's near each other. If you don't collapse what the border will be total is 10, but if you collapse it will show a weight of 5. You use caption-side to move your caption. If you add a width on the table, this will automatically put the table on the left side but if you want to center the box, you can use the auto. If you want to make it good for phone, we can do it by adding the property overflow then scroll If you want to add color for both the table and the cells make sure to remove the collapse.. The code that was commented contains all the code that you can use to make your table good.*/
+
+
+.schedule thead tr {
+    background-color: coral;
+    color: cornsilk;
+}
+
+.schedule tfoot tr {
+    background-color: coral;
+    color: cornsilk;
+}
+
+/*.grayed {
+    background-color: lightblue;
+}
+ We can use this on to add color or to use the following below */
+
+.schedule tbody tr:nth-child(even) {
+    background-color: lightblue;
+}
+
+
+/*
+.schedule th, .schedule td {
+    border: thin solid black;
+    padding: 5px;
+    background-color: chocolate;
+    color: white; 
+    
+}
+ You can do another .schedule then use td or you can add the comma, then add the td beside. You use comma to add another selector. You can add padding to add spacess for inside the box.*/
+
+
+.num {
+    vertical-align: middle;
+}
