@@ -16,7 +16,7 @@
         <a href="#">Link</a>
     </nav>
 
-    <main>
+    <!-- <main>
         <h2>Questions: </h2>
         <h3>1. The form tag has an "action" attribute. What does it do?</h3>
         <p> Action attribute would result for something to happen when an information is inserted. </p>
@@ -27,58 +27,75 @@
         <h3>3. What is the difference between a "POST" and a "GET"?</h3>
         <p>Get, all our data will go to the URL. Instead of using the get we could use the post to not reflect  what information we put into the url while still sending the data into a database or somewhere. When do we use get and post, most of request are made in post request. if we modify or (related to change, add, update, or remove) something related to information, we should use the post request (change). With the get request, we're just reading. </p>
 
-        <p>Note: If you're planning for internship, be good at javascript. Do not rely on your placeholder to describe a tag. When it comes to labeling, we have to use the label tag.</p>
-    </main>
+        <h3>4. What are different ways to style your form?</h3>
+        <p> You can use flex or grid, but it's probably best to use flex so that it could also be good in mobile phone. </p>
+
+        <h3>5. How does flex help for both Desktop and Mobile phones?</h3>
+        <p> </p>
+
+        <p>Note: If you're planning for internship, be good at javascript. Do not rely on your placeholder to describe a tag. When it comes to labeling, we have to use the label tag. When using margin, the spacing between each other is overlapping. </p>
+
+        
+    </main> -->
 
     <div>
+        <h1>FORMS</h1>
         <form action="formprocess.html" method="post">
-            <div>
-                <label for="fname">Full Name</label>
-                <input type="text" name="fullname" placeholder="Full Name" id="fname">
-            </div>
+            <fieldset>
+                <legend>SIGN UP</legend>
+                <fieldset>
+                <div class="form-row">
+                    <label for="fname">Full Name</label>
+                    <input type="text" name="fullname" placeholder="Full Name" id="fname">
+                </div>
 
-            <div>
-                <label for="email">Email</label>
-                <input type="email" name="fullname" value="@email.com" id="email">
-            </div>
+                <div class="form-row">
+                    <label for="email">Email</label>
+                    <input type="email" name="fullname" value="@email.com" id="email">
+                </div>
 
-                input
-            <div>
-                <label for="pass">Password</label>
-                <input type="password" name="pass"placeholder ="Type your password here" id="pass">
-            </div>
+                
+                <div class="form-row">
+                    <label for="pass">Password</label>
+                    <input type="password" name="pass"placeholder ="Type your password here" id="pass">
+                </div>
 
-            <div>
-                <label for="state">State:</label>
-                <select name="state" id="state">
-                    <option value="Blank">---</option>
-                    <option value="HI" selected>Hawaii</option> 
-                    <!-- /*if you want to put Hawaii as a default just type selected*/ -->
-                    <option value="WA">Washington</option>
-                    <option value="CA">California</option>
-                    <option value="UT">Utah</option>
-                </select>
-            </div>
+                <div class="form-row">
+                    <label for="state">State:</label>
+                    <select name="state" id="state">
+                        <option value="Blank">---</option>
+                        <option value="HI" selected>Hawaii</option> 
+                        <!-- /*if you want to put Hawaii as a default just type selected*/ -->
+                        <option value="WA">Washington</option>
+                        <option value="CA">California</option>
+                        <option value="UT">Utah</option>
+                    </select>
+                </div>
 
-            <div>
-                <label><input type="checkbox" value="TRUE"> I agree to the terms and condition.</label>
-            </div>
+                <div class="check-row">
+                    <div class="spacer"></div>
+                    <label><input type="checkbox" value="TRUE"> I agree to the terms and condition.</label>
+                </div>
 
-            <div>
+                <div class="check-row">
+                    <div class="spacer">Gender:</div>
+                    <label> <input type="radio" name="gender" id="Male">Male</label>
+                    <label> <input type="radio" name="gender" id="female">Female</label>
+                    <!-- /*You have to put same name different Id or value else, you won't be able to remove one when you click it.*/ -->
+                </div>
 
-                <label> <input type="radio" name="gender" id="Male">Male</label>
-                <label> <input type="radio" name="gender" id="female">Female</label>
-                <!-- /*You have to put same name different Id or value else, you won't be able to remove one when you click it.*/ -->
-            </div>
+                <div class="form-row">
+                    <label for="comment">Comments:</label>
+                    <textarea name="comment" id="comment">Additional Comments:</textarea>
 
-            <div>
-                <label for="comment">Comments:</label>
-                <textarea name="comment" id="comment">Additional Comments:</textarea>
+                    <!-- /* if you put spaces between the textarea tag, it will reflect on the webpage you're creating.*/ -->
+                </div>
 
-                <!-- /* if you put spaces between the textarea tag, it will reflect on the webpage you're creating.*/ -->
-            </div>
-
-            <input type="submit" value="Sign Up">
+                <div class="form-row">
+                    <div class="spacer"></div>
+                    <input type="submit" value="Sign Up">
+                </div>
+            </fieldset>
         </form>
     </div>
 

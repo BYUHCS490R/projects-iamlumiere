@@ -1,0 +1,66 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.form-row, .check-row {
+    display: flex;
+    gap: 10px;
+    margin: 15px 0;
+}
+
+.form-row label {
+    width: 150px;
+    text-align: right;
+}
+
+.form-row input:not([type = "submit"]), .form-row select, .form-row textarea {
+    padding: 8px;
+    border-radius: 10px;
+    background-color: skyblue;
+}
+
+
+.form-row input:not([type = "submit"]):focus, .form-row select:focus, .form-row textarea:focus {
+    background-color: rgb(193, 222, 233);
+}
+
+.form-row input[type = 'submit'] {
+    background-color: white;
+    color: black;
+    padding: 5px 10px;
+    border-radius: 15px;
+}
+
+.spacer {
+    width: 150px;
+    text-align: right;
+}
+
+fieldset {
+    background-color: cornflowerblue;
+    width: 80%;
+    margin: auto;
+
+}
+/* .check-row {
+    display: flex;
+    gap: 10px;
+    margin: 15px 0;
+} */
+
+legend {
+    background-color: black;
+    color: white;
+    padding: 20px;
+}
+
+
+@media ONLY screen AND (max-width: 600px) {
+    .form-row, .check-row {
+        flex-direction: column;
+    }
+
+    .form-row label, .spacer {
+        text-align: left;
+    }
+}
