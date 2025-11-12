@@ -1,0 +1,106 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+header {
+    background-color: black;
+    margin: 0;
+}
+
+header h1 {
+    color: white;
+    font-family:Verdana, Geneva, Tahoma, sans-serif ;
+    font-size: 67px;
+    text-align: center;
+    margin: 0;
+    margin-bottom: 20px;
+}
+
+nav {
+    background-color: black;
+    padding: 25px;
+    text-align: center;
+    display: flex;
+        justify-content: space-evenly;
+
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+}
+
+/* .personaltitle {
+    margin: 10px 15px;
+    background-color: gray;
+    border-radius: 10px;
+}
+
+.personaltitle h4 {
+    padding: 10px;
+    margin-left: 5px;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+} */
+
+.fieldset1 {
+    width: 80%;
+    margin: auto;
+    border-radius: 30px;
+    background-color: rgb(220, 215, 215);
+}
+
+.fieldset2 {
+    width: 80%;
+    margin: auto;
+    border-radius: 30px;
+    background-color: rgb(220, 215, 215);
+}
+
+.form-row, .check-row {
+    display: flex;
+    gap: 20px;
+    margin: 15px 20px 0 15px;
+    justify-content: center;
+}
+
+.form-row, .check-row label {
+    text-align: right;
+}
+
+.form-row, .check-row input {
+    padding: 8px;
+}
+
+
+legend {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    background-color: gray;
+    padding: 10px;
+    border-radius: 25px;
+}
+
+
+footer {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 17px;
+    padding: 15px;
+    text-align: center;
+    background-color: rgb(39, 38, 38);
+    color: white;
+}
+
+
+@media ONLY screen AND (max-width: 600px) {
+    .form-row, .check-row {
+        flex-direction: column;
+    }
+
+    .form-row label, .spacer {
+        text-align: left;
+    }
+}
