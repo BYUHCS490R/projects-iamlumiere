@@ -40,7 +40,7 @@
 
     <div>
         <h1>FORMS</h1>
-        <form action="formprocess.html" method="post">
+        <form action="formprocess.html" method="post" id="myForm">
             <fieldset>
                 <legend>SIGN UP</legend>
                 <fieldset>
@@ -51,7 +51,7 @@
 
                 <div class="form-row">
                     <label for="email">Email</label>
-                    <input type="email" name="fullname" value="@email.com" id="email">
+                    <input type="email" name="fullname" id="email">
                 </div>
 
                 
@@ -103,5 +103,39 @@
     <footer>
         &copy;Markham Abor
     </footer>
+    <script>
+        document.getElementById('myForm').addEventListener('submit',function(event) {
+            event.preventDefault();
+
+
+            const fullname = document.getElementById('fname').value;
+            const email = document.getElementById('email').value;
+            const password = document.getElementById('pass').value;
+            // const state = document.getElementById('state').value; 
+
+            if (!fname || !email) {
+                alert("You need a name and email.");
+                return;
+            }
+
+            // if (!state || state == "---") {
+            //     alert("You have to put a state");
+            //     return;
+            // }
+
+            const formData = {
+                name: fullname,
+                email: email,
+                password: password,
+                // state: state
+
+            };
+
+            alert("Form Submitted");
+            console.log(formData);
+
+        }); 
+    </script>
+
 </body>
 </html>
