@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Project Forms</title>
-    <link rel="stylesheet" href="forms.css">
+    <link rel="stylesheet" href="formsproject9.css">
 </head>
 <body>
     <header>
@@ -14,7 +14,7 @@
     <main>
 
         <div>
-            <form action="formprocess.html" method = "post">
+            <form action="formprocess.html" method = "post" id="project9form">
 
                 <fieldset class="fieldset2">
                     <legend>ACCOUNT CREATION</legend>
@@ -31,13 +31,18 @@
 
                     <div class="check-row">
                         <div class="spacer">Gender:</div>
-                            <label> <input type="radio" name="gender" id="Male">Male</label>
-                            <label> <input type="radio" name="gender" id="female">Female</label>
+                            <label> <input type="radio" name="accountgender" id="Male">Male</label>
+                            <label> <input type="radio" name="accountgender" id="female">Female</label>
+                    </div>
+
+                    <div class="form-row">
+                        <label for="age">Age:</label>
+                        <input type="number" name="age" id="accountage" min="16" max="130">
                     </div>
 
                     <div class="form-row">
                         <label for="civilstatus">Civil Status:</label>
-                        <select name="civilstatus" id="civilstatus">
+                        <select name="civilstatus" id="accountcivilstatus">
                             <option value="Blank">---</option>
                             <option value="Single">Single</option>
                             <option value="Widowed">Widowed</option>
@@ -49,7 +54,7 @@
 
                     <div class="form-row">
                         <label for="username">Username:</label>
-                        <input type="text" name="username" id="username">
+                        <input type="text" name="username" id="accountusername">
                     </div>
 
                     <div class="form-row">
@@ -59,21 +64,21 @@
 
                     <div class="form-row">
                         <label for="password">Password:</label>
-                        <input type="password" name="password" id="password">
+                        <input type="password" name="password" id="accountpassword">
                     </div>
 
                     <div class="form-row">
                         <label for="confirmpassword">Confirm Password:</label>
-                        <input type="password" name="confirmpassword" id="confirmpassword">
+                        <input type="password" name="confirmpassword" id="accountconfirmpassword">
                     </div>
 
                     <div class="check-row">
                         <div class="spacer"></div>
-                            <label><input type="checkbox" value="TRUE"> I agree to the terms and condition </label>
+                            <label><input type="checkbox" value="TRUE" id="accountterms"> I agree to the terms and condition </label>
                     </div>
 
                     <div class="form-row">
-                        <input type="button" value="Sign Up">
+                        <input type="submit" value="Register Account">
                     </div>
 
                 </fieldset>
@@ -86,7 +91,7 @@
     <footer>
         &copy; 2025 Markham Abor
     </footer>
-    <script src="forms.js"></script>
+    <script src="formsproject9.js"></script>
 <!-- Javascript are written below their html -->
 </body>
 </html>
